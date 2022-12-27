@@ -6,6 +6,9 @@
 }
 body{
     background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 52vw bottom 48vh, left 47vw top 52vh;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,26 +18,18 @@ body{
 }
 .container{
     background-color: white;
-    max-width: 25%;
+    max-width: 25rem;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
-.head_img{
-    width:100%;
-    border-radius: 1rem 1rem 0 0;
-}
 .picDiv{
-    width: 30%;
-    background-color: white;
+    /* background-color: black; */
+    margin-top: -3rem;
+    border: solid white 0.5rem;
     border-radius: 100%;
-    padding: 5px;
-    position: relative;
-    bottom:3em;
 }
 .picDiv img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
     border-radius: 100%;
 }
 .section1{
